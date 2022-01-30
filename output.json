@@ -2308,7 +2308,7 @@
         "buyer": "0x65dD8b458d6c1083320696D704008B6caA94cee5"
       },
       {
-        "owner": "0x201a9aE495adcbD9B3F606E1427B99b8D6Bc8F90",
+        "owner": "0x3969c4970F037c151655b41dCfD3e0C377206206",
         "tokenId": "636",
         "buyer": "0x846FF49d72F4e3CA7a3D318820C6C2debe23c68A"
       },
@@ -4913,6 +4913,11 @@
         "buyer": "0xFBc3F33af3Dd99D709631791741eEa65eDdbFA50"
       },
       {
+        "owner": "0xe3CAdc86B296e57C55dCB7c9e90936e7517237b3",
+        "tokenId": "2732",
+        "buyer": "0xe3CAdc86B296e57C55dCB7c9e90936e7517237b3"
+      },
+      {
         "owner": "0x61578c3f558f89786AaD724284ea96A310772D4a",
         "tokenId": "2733",
         "buyer": "0x846FF49d72F4e3CA7a3D318820C6C2debe23c68A"
@@ -7306,6 +7311,11 @@
         "owner": "0x7221dCAcdaB745ebC827578DeE7c46ebc41ae7Eb",
         "tokenId": "5520",
         "buyer": "0x7221dCAcdaB745ebC827578DeE7c46ebc41ae7Eb"
+      },
+      {
+        "owner": "0xbC7f85433C14205AF928E05b2d5B602F40100673",
+        "tokenId": "5528",
+        "buyer": "0xbC7f85433C14205AF928E05b2d5B602F40100673"
       },
       {
         "owner": "0x04BD8DF63C65F7669591144D9371494a21AbbCFc",
