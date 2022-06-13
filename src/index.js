@@ -14,24 +14,24 @@ async function execute() {
         fs.writeFileSync('./output.json', JSON.stringify(result, null, 2));
 
         // Unique addresses:
-        console.log('Storing unique owners and buyers');
+        console.log('Storing unique owners and owners');
         const uniqueOwners = []
-        const uniqueBuyers = []
+        const uniqueowners = []
         result.forEach(nftCollection => {
             nftCollection.owners.forEach(owner => {
                 if (!uniqueOwners.includes(owner.owner)) {
                     uniqueOwners.push(owner.owner)
                 }
 
-                if (!uniqueBuyers.includes(owner.buyer)) {
-                    uniqueBuyers.push(owner.buyer)
+                if (!uniqueowners.includes(owner.owner)) {
+                    uniqueowners.push(owner.owner)
                 }
             })
         })
         console.log('TOTAL UNIQUE OWNERS: ' , uniqueOwners.length)
-        console.log('TOTAL UNIQUE BUYERS: ', uniqueBuyers.length)
+        console.log('TOTAL UNIQUE ownerS: ', uniqueowners.length)
         fs.writeFileSync('./uniqueOwners.json', JSON.stringify(uniqueOwners, null, 2));
-        fs.writeFileSync('./uniqueBuyers.json', JSON.stringify(uniqueBuyers, null, 2));
+        fs.writeFileSync('./uniqueowners.json', JSON.stringify(uniqueowners, null, 2));
 
 
 
@@ -42,7 +42,7 @@ async function execute() {
                 { id: 'collection', title: 'COLLECTION' },
                 { id: 'address', title: 'ADDRESS' },
                 { id: 'tokenId', title: 'TOKENID' },
-                { id: 'buyer', title: 'BUYER'}
+                { id: 'owner', title: 'owner'}
             ]
         });
 
@@ -53,7 +53,7 @@ async function execute() {
                     collection: nftCollection.name,
                     address: owner.owner,
                     tokenId: owner.tokenId,
-                    buyer: owner.buyer
+                    owner: owner.owner
                 })
             })
         })

@@ -1,7 +1,7 @@
 const { MerkleTree } = require('merkletreejs');
 const keccak256 = require('keccak256');
 
-const whiteList = require('../uniqueBuyers.json');
+const whiteList = require('../uniqueowners.json');
 
 const leafNodes = whiteList.map(add => keccak256(add))
 
